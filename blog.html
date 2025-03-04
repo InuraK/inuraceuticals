@@ -1,17 +1,22 @@
+---
+layout: default
+title: Blog
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Inuraceuticals</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">  <!-- Ensure this CSS is the same as other pages -->
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -23,9 +28,9 @@
             <h1>Blog</h1>
             {% for post in site.posts %}
                 <article class="blog-post">
-                    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
                     <p>{{ post.excerpt }}</p>
-                    <a href="{{ post.url }}" class="read-more">Read More</a>
+                    <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
                     <hr>
                 </article>
             {% endfor %}
@@ -37,4 +42,5 @@
     </footer>
 </body>
 </html>
+
 

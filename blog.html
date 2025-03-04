@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inuraceuticals | Blog</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Inuraceuticals</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Header Section -->
-  <header>
-    <h1>Blog</h1>
-  </header>
+    <main>
+        <section class="blog-section">
+            <h1>Blog</h1>
+            {% for post in site.posts %}
+                <article class="blog-post">
+                    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    <p>{{ post.excerpt }}</p>
+                    <a href="{{ post.url }}" class="read-more">Read More</a>
+                    <hr>
+                </article>
+            {% endfor %}
+        </section>
+    </main>
 
-  <!-- Main Content: Blog Posts -->
-  <main>
-    <section class="blog-posts">
-      <article class="post">
-         <h2><a href="posts/post1.html">Understanding Drug Discovery</a></h2>
-         <p>Exploring how scientists develop new medicines to treat diseases...</p>
-         <a href="posts/post1.html" class="read-more">Read More</a>
-      </article>
-      <article class="post">
-         <h2><a href="posts/post2.html">Breakthroughs in Drug Development</a></h2>
-         <p>A look at recent innovations shaping the future of medicine...</p>
-         <a href="posts/post2.html" class="read-more">Read More</a>
-      </article>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Inuraceuticals. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Inuraceuticals. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+

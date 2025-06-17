@@ -13,13 +13,23 @@ title: Blog
 </head>
 <body>
 
+    <header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
     <main>
         <section class="blog-section">
             <h1>Blog</h1>
             {% for post in site.posts %}
                 <article class="blog-post">
-                    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-                    <p>{{ post.excerpt }}</p>
+                    <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
                     <hr>
                 </article>
             {% endfor %}

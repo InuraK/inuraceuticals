@@ -18,6 +18,7 @@ title: Blog
             <h1>Blog</h1>
             {% for post in site.posts %}
                 <article class="blog-post">
+                    <p>{{ post.excerpt }}</p>
                     <a href="{{ post.url | relative_url }}" class="read-more">Read More</a>
                     <hr>
                 </article>

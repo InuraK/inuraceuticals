@@ -3,30 +3,18 @@ layout: default
 title: Blog
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Inuraceuticals</title>
-    <link rel="stylesheet" href="style.css">  <!-- Ensure this CSS is the same as other pages -->
-</head>
-<body>
+<header>
+  <h1>Blog</h1>
+</header>
 
-    <main>
-        <section class="blog-section">
-            <h1>Blog</h1>
-            {% for post in site.posts %}
-                <article class="blog-post">
-                    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-                    <p>{{ post.excerpt }}</p>
-                    <hr>
-                </article>
-            {% endfor %}
-        </section>
-    </main>
-
-</body>
-</html>
-
-
+<main>
+  <section class="blog-section">
+    {% for post in site.posts %}
+      <article class="blog-post">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt }}</p>
+        <hr>
+      </article>
+    {% endfor %}
+  </section>
+</main>

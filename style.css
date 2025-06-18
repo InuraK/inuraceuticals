@@ -1,118 +1,32 @@
-/* Base Styles */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f7fb;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/inuraceuticals/style.css">
+  <script src="/inuraceuticals/script.js" defer></script>
+</head>
+<body>
 
-header {
-  background-color: #7A0B96;
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-}
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/inuraceuticals/index.html">Home</a></li>
+        <li><a href="/inuraceuticals/about.html">About</a></li>
+        <li><a href="/inuraceuticals/blog.html">Blog</a></li>
+        <li><a href="/inuraceuticals/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-header h1 {
-  margin: 0;
-  font-size: 2em;
-}
+  <main>
+    {{ content }}
+  </main>
 
-header p {
-  font-size: 1.2em;
-  margin-top: 10px;
-}
+  <footer>
+    <p>&copy; 2025 Inuraceuticals. All rights reserved.</p>
+  </footer>
 
-main {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-/* Navigation */
-nav {
-  background-color: #4B0082;
-  padding: 15px 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #FFD700;
-}
-
-/* Footer */
-footer {
-  background-color: #C37FD3;
-  color: white;
-  padding: 15px 0;
-  text-align: center;
-  margin-top: 40px;
-}
-
-/* Contact Form */
-.contact-form form {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  max-width: 600px;
-  margin: auto;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  font-size: 1em;
-}
-
-.contact-form button {
-  background-color: #7A0B96;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.contact-form button:hover {
-  background-color: #5a076c;
-}
-
-/* Blog Section */
-.blog-post h2 {
-  margin-bottom: 5px;
-}
-
-.blog-post p {
-  color: #666;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  header h1 {
-    font-size: 1.5em;
-  }
-}
+</body>
+</html>

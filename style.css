@@ -22,10 +22,13 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 10px;
     padding: 0;
     margin: 0;
+}
+nav ul li {
+    padding-inline: 10px;
 }
 nav ul li a {
     color: white;
@@ -121,7 +124,11 @@ img {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 10px;
+    }
+
+    nav ul li {
+        padding-inline: 10px;
     }
 
     header h1 {

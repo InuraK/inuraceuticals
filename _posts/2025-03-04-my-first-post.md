@@ -53,7 +53,7 @@ Emerging technologies like **AI and machine learning**, **personalized medicine*
 
 ## **📄 Download Detailed Research Paper**
 
-[**Download Complete Research Article (PDF)**](The Journey of a Drug.pdf)
+[**Download Complete Research Article (PDF)**](https://github.com/Inuraceuticals/your-repo-name/raw/main/The%20Journey%20of%20a%20Drug-%20From%20Discovery%20to%20Patient.pdf)
 
 *This comprehensive research paper provides in-depth analysis including:*
 - **Detailed statistical data and references**

@@ -68,4 +68,4 @@ So next time you take medicine, remember — behind that tiny tablet lies an inc
 ---
 
 **Next Topic Preview:**  
-🧫 *Inside the Lab: How Scientists Design Clinical Trials for New Medicines*
+🧫 *How Medicines Actually Work Inside the Body*
